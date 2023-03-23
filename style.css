@@ -1,0 +1,123 @@
+/* Estilo para la página */
+body {
+  font-family: sans-serif;
+  background-color: #CB3765;
+}
+
+/* Estilo para el contenedor principal */
+.container {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.66);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(14.8px);
+  -webkit-backdrop-filter: blur(14.8px);
+  border: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+/* Estilo para el título */
+.container h1 {
+  margin: 0 0 20px;
+  text-align: center;
+  font-size: 32px;
+  color: #fff;
+}
+
+/* Estilo para el cuadro de texto */
+.task {
+  width: 95%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+  outline: none;
+}
+
+.task:focus {
+  border: 2px solid #FF5B5B;
+}
+
+/* Estilo para el botón */
+.button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: #f44336;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.button:hover {
+  background-color: #FF5B5B;
+}
+
+/* Estilo para la lista */
+.list {
+  list-style: none;
+  padding: 0;
+}
+
+.sub-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  word-wrap: break-word;
+}
+
+.sub-list img {
+  width: 26px;
+  height: 26px;
+}
+
+/* Estilo para el botón de eliminar */
+.btn-delete {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  margin-left: 10px;
+}
+
+.btn-delete:hover {
+  transform: scale(1.2);
+}
+
+/* Estilo para la tarea */
+.sub-list p {
+  font-size: 16px;
+  color: #333;
+  margin: 0;
+  word-break: break-all;
+  flex-grow: 1;
+}
+
+/* Estilos para las prioridades */
+.high {
+  color: #FF5B5B;
+  font-weight: bold;
+}
+
+.medium {
+  color: #FFC107;
+  font-weight: bold;
+}
+
+.low {
+  color: #4CAF50;
+  font-weight: bold;
+}
